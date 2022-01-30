@@ -43,28 +43,34 @@ function operate(firstNumber, operator, secondNumber){
 
 function add(firstNumber, secondNumber) {
     result = firstNumber + secondNumber;
-    result = result.toPrecision(2)
+    result = result.toPrecision(4)
     screen_span.innerHTML = result
     return result;
 }
 
 function subtract(firstNumber, secondNumber) {
     result = firstNumber - secondNumber;
-    result = result.toPrecision(2)
+    result = result.toPrecision(4)
     screen_span.innerHTML = result
     return result;
 }
 
 function multiply(firstNumber, secondNumber) {
     result = firstNumber * secondNumber;
-    result = result.toPrecision(2)
+    result = result.toPrecision(4)
     screen_span.innerHTML = result
     return result;
 }
 
 function divide(firstNumber, secondNumber) {
+    
+
+
     result = firstNumber / secondNumber;
-    result = result.toPrecision(2)
+    result = result.toPrecision(4)
+    if (secondNumber == 0){
+        result = 'Error'
+    }
     screen_span.innerHTML = result
     return result;
 }

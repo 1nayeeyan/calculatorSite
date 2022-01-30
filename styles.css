@@ -6,11 +6,9 @@ body{
 }
 
 
-
-
 .calculator{
     height: 850px;
-    width: 600px;
+    width: 650px;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -23,18 +21,20 @@ body{
     "seven eight nine multiply"
     ". zero . divide";
     background-color: rgb(0, 0, 0);
+    border-radius: 15px;
 }
 
 #screen{
     grid-area: screen;
     color: white;
-    background-color: magenta;
-    font-size: 40px;
+    background-color: rgba(2, 80, 13, 0.616);
+    font-size: 60px;
     height: 50%;
     margin-left: 5px;
     justify-content: center;
     align-content: center;
     margin-top: 50px;
+    border-radius: 10px;
 }
 
 #clear{
@@ -46,6 +46,8 @@ body{
     padding: 16px;
     box-sizing: border-box;
     border-radius: 20px;
+    background-color:rgb(110, 104, 102);
+    color: yellow;
 }
 
 #digitOne{
@@ -115,8 +117,15 @@ body{
     padding: 16px;
     box-sizing: border-box;
     border-radius: 20px;
-    color: rgb(18, 252, 252);
-    background-color: slategrey;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 5px 10px rgb(255, 255, 255, 0.5);
+}
+
+.digits:hover{
+    background-color: rgb(255, 255, 255);
+    font-size: 50px;
+    box-shadow: 0px 0px rgb(255, 255, 255);
 }
 
 .operator{
@@ -127,4 +136,12 @@ body{
     box-sizing: border-box;
     border-radius: 20px;
     color: yellow;
+    background-color: orangered;
+    box-shadow: 5px 10px rgba(255, 81, 0, 0.5);
+}
+
+.operator:hover{
+    background-color: orangered;
+    font-size: 60px;
+    box-shadow: 0px 0px rgb(255, 255, 255);
 }
