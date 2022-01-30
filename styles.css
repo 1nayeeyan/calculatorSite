@@ -1,0 +1,130 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.calculator{
+    height: 850px;
+    width: 600px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "screen screen clear equal"
+    "one two three plus"
+    "four five six subtract"
+    "seven eight nine multiply"
+    ". zero . divide";
+    background-color: rgb(0, 0, 0);
+}
+
+#screen{
+    grid-area: screen;
+    color: white;
+    background-color: magenta;
+    font-size: 40px;
+    height: 50%;
+    margin-left: 5px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+#clear{
+    grid-area: clear;
+    color: royalblue;
+    font-size: 30px;
+    line-height: 120px;
+    text-align: center;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#digitOne{
+    grid-area: one;
+}
+
+#digitTwo{
+    grid-area: two;
+}
+
+#digitThree{
+    grid-area: three;
+}
+
+#addition{
+    grid-area: plus;
+}
+
+#digitFour{
+    grid-area: four;
+}
+
+#digitFive{
+    grid-area: five;
+}
+
+#digitSix{
+    grid-area: six;
+}
+
+#subtraction{
+    grid-area: subtract;
+}
+
+#digitSeven{
+    grid-area: seven;
+}
+
+#digitEight{
+    grid-area: eight;
+}
+
+#digitNine{
+    grid-area: nine;
+}
+
+#multiplication{
+    grid-area: multiply;
+}
+
+#digitZero{
+    grid-area: zero;
+}
+
+#division{
+    grid-area: divide;
+}
+
+#equals{
+    grid-area: equal;
+}
+
+.digits{
+    font-size: 40px;
+    line-height: 120px;
+    text-align: center;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: rgb(18, 252, 252);
+    background-color: slategrey;
+}
+
+.operator{
+    font-size: 40px;
+    line-height: 120px;
+    text-align: center;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: yellow;
+}
